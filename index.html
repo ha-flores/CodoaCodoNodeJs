@@ -1,0 +1,488 @@
+<!DOCTYPE html>       
+<html lang="es"> 
+<head>
+  <title>Design Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/boxicon.min.css" rel="stylesheet">
+<!--   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  -->
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand h1 p-0 m-0 d-flex align-items-center" href="index.html">
+        <img src="./assets/img/logo.svg" alt="logo" width="35px" id="logo" style="filter: invert(100%);">
+        <span class="lead ms-3 mb-0 text-muted">Design Studio</span>
+      </a> 
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"	data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent"	aria-expanded="false"	aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+		  <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+        <div class="flex-fill mx-sm-5">
+          <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold px-3" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-bold px-3" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-bold px-3" href="work.html">Trabajos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-bold px-3" href="pricing.html">Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-bold px-3" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar align-self-center d-flex ">
+          <a class="nav-link" href="#">
+            <img src="assets/icons/bell.svg" alt="Bell" height="20px" style="filter: invert(100%);" id="navbar__bell-opt">
+          </a>
+          <a class="nav-link" href="#">
+            <img src="assets/icons/gear.svg" alt="Gear" height="20px" style="filter: invert(100%);" id="navbar__gear-opt">
+          </a>
+          <a class="nav-link" href="#">
+            <img src="assets/icons/circle-user.svg" alt="User" height="20px" style="filter: invert(100%);" id="navbar__user-opt">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner-wrapper bg-light">
+    <div id="index_banner" class="banner-vertical-center-index container-fluid p-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators mb-5">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="me-2 active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="ms-2 "></li>
+        </ol>	
+        <div class="carousel-inner">
+          <div class="carousel-item active vh-100">
+            <div class="pb-5 row d-flex align-items-center vh-100">
+              <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                <h1 class="banner-heading text-white fw-bolder display-3 mb-0 pb-3 mx-0 px-0">Desarrollamos estrategias para tu negocio.</h1>
+                <p class="banner-body fw-normal p-responsive text-white py-3 mb-5 mx-0 px-0">Nos dedicamos al SEO y al marketing posicionándo tu web en Google.</p>
+                <a class="banner-button btn btn-danger btn-lg px-4 fw-light text-white mb-5" href="#" role="button">Comenzar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item vh-100">
+            <div class="pb-5 row d-flex align-items-center vh-100">
+              <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                <h1 class="banner-heading text-white fw-bolder display-3 mb-0 pb-3 mx-0 px-0">Optimizamos publicaciones en redes sociales.</h1>
+                <p class="banner-body fw-normal p-responsive text-white py-3 mb-5">Somos expertos en comunicación social.</p>
+                <a class="banner-button btn btn-danger btn-lg px-4 fw-light text-white mb-5" href="#" role="button">Comenzar</a>
+              </div>
+            </div>
+          </div>		
+
+          <div class="carousel-item vh-100">
+            <div class="pb-5 row d-flex align-items-center vh-100">
+              <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                <h1 class="banner-heading  text-white fw-bolder display-3 mb-0 pb-3 mx-0 px-0">Nuestras campañas de venta posicionan tu marca.</h1>
+                <p class="banner-body fw-normal p-responsive text-white mb-5 py-3">Nos dedicamos a generar leads y conversiones de venta en tu página web en forma automatizada.</p>
+                <a class="banner-button btn btn-danger btn-lg px-4 fw-light text-white mb-5" href="#" role="button">Comenzar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <i class='bx bx-chevron-left'></i>
+          <span class="visually-hidden">Ant.</span>
+        </a>
+        <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <i class='bx bx-chevron-right'></i>
+          <span class="visually-hidden">Prox.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="service-wrapper bg-light">
+    <div class="container py-5">
+      <div class="row mx-5">
+        <h2 class="h2 text-center col-12 mt-5 fw-bolder">Nuestros servicios</h2>
+        <div class="service-heading col-12 col-lg-12 text-center float-end light-300">
+          <h2 class="h4 pb-5 fw-light">Hacemos que el futuro sea hoy</h2>
+        </div>
+        <p class="service-footer col-12 col-lg-6 text-start pb-3 text-muted px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mauris ipsum, accumsan quis ante nec, consectetur lobortis lacus. Pellentesque id posuere diam, ac porta dolor. In hac habitasse platea dictumst. Aliquam erat volutpat. Donec ac vestibulum justo, sit amet vehicula nibh. Vivamus ornare lectus magna, ac cursus dolor laoreet quis. Nunc at quam ornare metus posuere commodo in quis sem. Praesent ultrices quis ex eu auctor. Aenean vulputate dignissim nisl, quis bibendum ex auctor sed me lator re suple.</p>
+        <p class="service-footer col-12 col-lg-6 text-start pb-3 text-muted px-2">Nulla facilisi. Nam at dignissim risus. Proin sed viverra mi. Fusce nulla ipsum, sodales et sem sed, lobortis hendrerit elit. Pellentesque eu augue at arcu sodales eleifend. Nam vel aliquet neque, non congue erat. Nullam lacinia lobortis felis at convallis. Pellentesque maximus commodo efficitur. Praesent convallis vestibulum enim, nec fermentum magna placerat nec. Praesent placerat nunc tellus, tempor tincidunt lacus laoreet luctus.</p>
+      </div>
+    </div>
+
+    <div class="service-tag py-5">
+      <div class="col-md-12">
+        <ul class="nav d-flex justify-content-center">
+          <li class="nav-item mx-lg-4">
+            <a class="filter-btn nav-link active shadow text-white px-4 fw-bold" href="#" data-filter=".project">Todo</a>
+          </li>
+          <li class="nav-item mx-lg-4">
+            <a class="filter-btn nav-link text-white px-4 fw-bold" href="#" data-filter=".graphic">Gráfica</a>
+          </li>
+          <li class="filter-btn nav-item mx-lg-4">
+            <a class="filter-btn nav-link text-white px-4 fw-bold" href="#" data-filter=".ui">UI/UX</a>
+          </li>
+          <li class="nav-item mx-lg-4">
+            <a class="filter-btn nav-link text-white px-4 fw-bold" href="#" data-filter=".branding">Branding</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="overflow-hidden bg-light" style="padding: 8rem 0;">
+    <div class="container">
+      <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+        <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="service card-img" src="./assets/img/card3.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">UI/UX diseño</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card4.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Redes Sociales</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card7.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Marketing</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card5.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Gráfica</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card8.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Marketing Digital</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card1.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Branding</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card6.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Negocios</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+          <a href="#" class="service-work card border-0 text-white overflow-hidden mx-5 m-sm-0">
+            <img class="card-img" src="./assets/img/card2.jpg" alt="Card image">
+            <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="service-work-content text-left text-light">
+                <span class="mb-lg-2 fw-bold card-work-title">Photography</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-work" style="background-color: #6c757d;">
+    <div class="container py-5">
+      <div class="d-flex justify-content-center align-items-center ">
+        <img src="./assets/icons/money-bill-1-wave-solid.svg" alt="Money" height="60px" style="filter: invert(100%);">
+        <h3 class="ms-5 ms-5 h3 text-start text-white fw-bolder">Transformá tu forma de vender</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-work py-5 mb-5">
+    <div class="container">
+      <div class="recent-work-header row text-center pb-5">
+        <h2 class="col-12 h2 fw-bolder py-5">Nuestros Trabajos</h2>
+      </div>
+      <div class="row gy-5 g-lg-5 mb-4">
+        <div class="recent-work-col col-sm-12 col-md-6 col-xl-4 mb-3">
+          <a href="#" class="recent-work card border-0 overflow-hidden">
+            <img class="recent-work-img card-img" src="./assets/img/recent-work-02.jpg" alt="Card image">
+            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                <h3 class="card-title card-rwork-title fw-bolder text-white">Social Media</h3>
+                <p class="card-text text-light">Ullamco laboris nisi ut aliquip ex</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="recent-work-col col-sm-12 col-md-6 col-xl-4 mb-3">
+          <a href="#" class="recent-work card border-0 overflow-hidden">
+            <img class="recent-work-img card-img" src="./assets/img/recent-work-01.jpg" alt="Card image">
+            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                <h3 class="card-title card-rwork-title fw-bolder text-white">Web Marketing</h3>
+                <p class="card-text text-light">Psum officia anim id est laborum.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="recent-work-col col-sm-12 col-md-6 col-xl-4 mb-3">
+          <a href="#" class="recent-work card border-0 overflow-hidden">
+            <img class="recent-work-img card-img" src="./assets/img/recent-work-03.jpg" alt="Card image">
+            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                <h3 class="card-title card-rwork-title fw-bolder text-white">Posicionamiento</h3>
+                <p class="card-text text-light">Sum dolor sit consencutur</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="recent-work-col col-sm-12 col-md-6 col-xl-4 mb-3">
+          <a href="#" class="recent-work card border-0 overflow-hidden">
+            <img class="recent-work-img card-img" src="./assets/img/recent-work-05.jpg" alt="Card image">
+            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                <h3 class="card-title card-rwork-title fw-bolder text-white">Estudios de Mercado</h3>
+                <p class="card-text text-light">Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="recent-work-col col-sm-12 col-md-6 col-xl-4 mb-3">
+          <a href="#" class="recent-work card border-0 overflow-hidden">
+            <img class="recent-work-img card-img" src="./assets/img/recent-work-04.jpg" alt="Card image">
+            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                <h3 class="card-title card-rwork-title fw-bolder text-white">Desarrollo de Marca</h3>
+                <p class="card-text text-light">Put enim ad minim veniam</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="recent-work-col col-sm-12 col-md-6 col-xl-4 mb-3">
+          <a href="#" class="recent-work card border-0 overflow-hidden">
+            <img class="recent-work-img card-img" src="./assets/img/recent-work-06.jpg" alt="Card image">
+            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+              <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                <h3 class="card-title card-rwork-title fw-bolder text-white">Diseño Creativo</h3>
+                <p class="card-text text-light">Mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-4">
+    <div class="container px-5">
+      <div class="row py-4">
+        <div class="col-lg-3 col-12 align-left">
+          <a class="navbar-brand d-flex justify-content-start align-items-center" href="index.html">
+            <img src="" alt="">
+            <img src="./assets/img/logo.svg" alt="logo" width="35px" id="logo">
+            <span class="lead ms-3 mb-0 text-light">Design Studio</a>
+          </a>
+          <p class="text-light my-lg-4 my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut.</p>
+          <ul class="list-inline footer-icons light-300">
+            <li class="list-inline-item m-0">
+              <a class="text-light" target="_blank" href="http://facebook.com/">
+                <i class='bx bxl-facebook-square bx-md'></i>
+              </a>
+            </li>
+            <li class="list-inline-item m-0">
+              <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                <i class='bx bxl-linkedin-square bx-md'></i>
+              </a>
+            </li>
+            <li class="list-inline-item m-0">
+              <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                <i class='bx bxl-whatsapp-square bx-md'></i>
+              </a>
+            </li>
+            <li class="list-inline-item m-0">
+              <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                <i class='bx bxl-flickr-square bx-md'></i>
+              </a>
+            </li>
+            <li class="list-inline-item m-0">
+              <a class="text-light" target="_blank" href="https://www.medium.com/">
+                <i class='bx bxl-medium-square bx-md' ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+          <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
+          <ul class="list-unstyled text-light light-300">
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light" href="index.html">Inicio</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="about.html">Nosotros</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="work.html">Trabajos</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="pricing.html">Precios</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+          <h2 class="h4 pb-lg-3 text-light light-300">Trabajos</h2>
+          <ul class="list-unstyled text-light light-300">
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="#">Marcas</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="#">Negocios</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="#">Marketing</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="#">Soluciones Digitales</a>
+            </li>
+            <li class="pb-2">
+              <i class='bx-fw bx bxs-chevron-right bx-xs'></i>
+              <a class="text-decoration-none text-light py-1" href="#">Gráfica</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+          <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+          <ul class="list-unstyled text-light light-300">
+            <li class="d-flex align-items-center">
+              <img src="./assets/icons/phone-solid.svg" alt="phone" height="13px" style="filter:invert(100%)">
+              <a class="text-decoration-none text-light ms-2 py-1" href="tel:011-5238-2505">011-5238-2505</a>
+            </li>
+            <li class="d-flex align-items-center">
+              <img src="./assets/icons/envelope-solid.svg" alt="phone" height="13px" style="filter:invert(100%)">
+              <a class="text-decoration-none text-light ms-2 py-1" href="mailto:info@designstudio.com">info@designstudio.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-100 bg-dark py-3">
+      <div class="container">
+        <div class="row pt-2">
+          <div class="col-lg-6 col-sm-12">
+            <p class="text-lg-start text-center text-light light-300">© Copyright 2022 Design Studio. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <p class="text-lg-end text-center text-light light-300">Diseñado por <a rel="sponsored" class="text-decoration-none text-light" href="https://cursophp.com.ar/" target="_blank"><strong>Design Studio</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Load jQuery require for isotope -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Isotope -->
+  <script src="assets/js/isotope.pkgd.js"></script>
+  <!-- Page Script -->
+  <script>
+    $(window).load(function() {
+      // init Isotope
+      var $projects = $('.projects').isotope({
+        itemSelector: '.project',
+        layoutMode: 'fitRows'
+      });
+      $(".filter-btn").click(function() {
+        var data_filter = $(this).attr("data-filter");
+        $projects.isotope({
+            filter: data_filter
+        });
+        $(".filter-btn").removeClass("active");
+        $(".filter-btn").removeClass("shadow");
+        $(this).addClass("active");
+        $(this).addClass("shadow");
+        return false;
+      });
+    });
+  </script>	  
+</body>
+</html>
